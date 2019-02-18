@@ -45,22 +45,19 @@ class App extends Component {
    return (
       <div className={"App"}>
           <Button
-              buttonType={Buttons.ModalButton}
-          >
+              buttonType={Buttons.ModalButton}>
               Click
           </Button>
           <Modal
               buttons={Buttons}
               show={this.state.Modal}
-              closed={this.showCancelHandler}
-          >
+              closed={this.showCancelHandler}>
               <p>Do you will continue?</p>
           </Modal>
           <Alert
               type={"welcome"}
               show={this.state.Alert}
-              dismiss={Buttons.CloseAlert}
-          >Hi, everybody</Alert>
+              dismiss={Buttons.CloseAlert}>Hi, everybody</Alert>
 
       </div>
     )
